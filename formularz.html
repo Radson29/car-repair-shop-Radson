@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mechanik - Radosław Kaczka</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d5280fea11.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Shalimar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon2.jpg">
+</head>
+
+<body id="bodyform">
+    <nav >
+        <p class="logo">Warsztat <br>u Radzia</p>
+       <button class="hamburger" id="hamburger">
+           <i class="fas fa-bars"></i>
+       </button>
+        <ul class="nav-ul" id="nav-ul">
+      <li>  <a href="index.html"><i class="fas fa-home"></i>Start</a></li>
+      <li>  <a href="uslugi.html"><i class="fas fa-wrench"></i>Usługi</a></li>
+      <li>  <a href="blog.html"><i class="fas fa-blog"></i>Blog</a></li>
+      <li>  <a href="cennik.html"><i class="fas fa-hand-holding-usd"></i>Cennik</a></li>
+      <li>  <a href="program.html"><i class="fab fa-js"></i>Program</a></li>
+      <li>  <a href="formularz.html" class="a1">Umów wizytę</a></li>
+    </ul>
+    
+        </nav>
+    <div id="overlay">
+     
+        <form id="formMain" onsubmit="event.preventDefault(); validateForm()">
+            <h1 id="form1">Wypełnij formularz  </h1>
+
+            <label >Imię:</label>
+            <input type="text" id="name" placeholder="Twoje imie">
+            <p class="error"></p>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Twój email">
+            <p class="error"></p>
+
+            <label for="phone">Numer telefonu: </label>
+            <input type="text" id="phone" placeholder="Twój numer telefonu">
+            <p class="error"></p>
+
+            <label for="wiadomosc">Wiadomość: </label>
+            <textarea id="wiadomosc" placeholder="Opisz swój problem..." rows="6"></textarea>
+            <p class="error"></p>
+            <div class="center">
+                <input type="submit" value="Wyślij wiadomość">
+                <p id="sukces"></p>
+
+            </div>
+        </form>
+    </div>
+
+
+    <footer>
+        <p>
+            Kaczka Radosław &copy; 2021/2022 Projekt Technologie internetowe
+        </p>
+
+    </footer>
+    <script src="javascript/formularz.js"></script>
+    <script>
+        const hamburger=document.getElementById("hamburger");
+        const navUL=document.getElementById("nav-ul");
+        hamburger.addEventListener("click",()=>{
+        navUL.classList.toggle("show");
+        });
+         </script>
+</body>
+
+</html>

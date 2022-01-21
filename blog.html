@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mechanik - Radosław Kaczka</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d5280fea11.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Shalimar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon2.jpg">
+</head>
+
+<body>
+    <nav >
+        <p class="logo">Warsztat <br>u Radzia</p>
+       <button class="hamburger" id="hamburger">
+           <i class="fas fa-bars"></i>
+       </button>
+        <ul class="nav-ul" id="nav-ul">
+      <li>  <a href="index.html" ><i class="fas fa-home"></i>Start</a></li>
+      <li>  <a href="uslugi.html"><i class="fas fa-wrench"></i>Usługi</a></li>
+      <li>  <a href="blog.html"><i class="fas fa-blog"></i>Blog</a></li>
+      <li>  <a href="cennik.html"><i class="fas fa-hand-holding-usd"></i>Cennik</a></li>
+      <li>  <a href="program.html"><i class="fab fa-js"></i>Program</a></li>
+      <li>  <a href="formularz.html" class="a1">Umów wizytę</a></li>
+    </ul>
+    
+        </nav>
+    <section class="blogs" id="blogs">
+        <h1 class="heading">Nasz blog motoryzacyjny</h1>
+        
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="img/img10.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i>Radek</a>
+                        <a href="#"> <i class="fas fa-calendar"></i>15 listopad 2021</a>
+                    </div>
+                    <h3>Nowy super samochód !</h3>
+                    <p>Lorem ipsum dolor sit, amet consectur adipisicin elit
+                        Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur</p>
+                        <a href="#" class="btn">Czytaj więcej...</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/img15.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i>Krzysztof</a>
+                        <a href="#"> <i class="fas fa-calendar"></i>20 Grudzień 2021</a>
+                    </div>
+                    <h3>Zima zaskoczyła kierowców</h3>
+                    <p>Lorem ipsum dolor sit, amet consectur adipisicin elit
+                        Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur</p>
+                        <a href="#" class="btn">Czytaj więcej...</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/img5.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i>Paulina</a>
+                        <a href="#"> <i class="fas fa-calendar"></i>12 Styczeń 2020</a>
+                    </div>
+                    <h3>Zobacz wnętrze kultowego pojazdu</h3>
+                    <p>Lorem ipsum dolor sit, amet consectur adipisicin elit
+                        Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur</p>
+                        <a href="#" class="btn">Czytaj więcej...</a>
+                </div>
+            </div>
+           
+        
+    
+        </div>
+        <div id="tresc">
+            <hr>
+            <h1 class="heading">ARTYKUŁY</h1>
+        
+                <div class="artykuly">
+                    <a href="https://www.magazyn-motoryzacyjny.pl/uchwyty-na-telefon-do-samochodu-jak-je-wybrac" target="_blank"><div class="blok" style="display: flex">
+                        <img alt="" src="img/no-phone.png" ><p >Uchwyty na telefon do samochodu – jak je wybrać?</p>
+                    </div></a>
+                    
+                    <a href="https://www.magazyn-motoryzacyjny.pl/na-co-zwracac-uwage-kupujac-czesci-samochodowe" target="_blank"><div class="blok" style="display: flex">
+                        <img alt="" src="img/spare-parts.png" ><p >Na co zwracać uwagę, kupując części samochodowe?</p>
+                    </div></a>
+                    
+                    <a href="https://www.magazyn-motoryzacyjny.pl/wirtualny-alkomat-kalkulator-promili-we-krwi-online" target="_blank"><div class="blok" style="display: flex">
+                        <img alt="" src="img/breathalyser.png" ><p>Wirtualny Alkomat – Kalkulator promili we krwi online</p>
+                    </div></a>
+                </div>
+                </div>
+    </section>
+ 
+     <footer>
+        <p>
+            Kaczka Radosław &copy; 2021/2022 Projekt Technologie internetowe
+        </p>
+
+    </footer>
+    <script>
+        const hamburger=document.getElementById("hamburger");
+        const navUL=document.getElementById("nav-ul");
+        hamburger.addEventListener("click",()=>{
+        navUL.classList.toggle("show");
+        });
+         </script>
+</body>
+
+</html>

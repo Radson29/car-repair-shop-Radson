@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mechanik - Radosław Kaczka</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d5280fea11.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Shalimar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon2.jpg">
+</head>
+
+<body>
+    <nav>
+        <p class="logo">Warsztat <br>u Radzia</p>
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-ul" id="nav-ul">
+            <li> <a href="index.html" ><i class="fas fa-home"></i>Start</a></li>
+            <li> <a href="uslugi.html"><i class="fas fa-wrench"></i>Usługi</a></li>
+            <li> <a href="blog.html"><i class="fas fa-blog"></i>Blog</a></li>
+            <li> <a href="cennik.html"><i class="fas fa-hand-holding-usd"></i>Cennik</a></li>
+            <li> <a href="program.html"><i class="fab fa-js"></i>Program</a></li>
+            <li> <a href="formularz.html" class="a1">Umów wizytę</a></li>
+        </ul>
+
+    </nav>
+    <div class="mng">
+    <h1 class="ch">Cennik usług </h1>
+    <table>
+
+        <tr id="headTable">
+            <th>Lp</th>
+            <th>Rodzaj usługi</th>
+            <th>Cena</th>
+        </tr>
+
+
+        <tr>
+            <td>1</td>
+            <td>Wymiana alternatora</td>
+            <td>40 zł</td>
+
+
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Montaż radia samochodowego</td>
+            <td> 50 zł</td>
+
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Wymiana klocków hamulcowych</td>
+            <td>55 zł</td>
+
+
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Wymiana tarcz hamulcowych</td>
+            <td>60 zł</td>
+
+
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Wymiana oleju slinikowego</td>
+            <td>55 zł</td>
+        
+        
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Czujnik ABS- wymiana</td>
+                <td>35 zł</td>
+            
+            
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Hamulec ręczny - regulacja</td>
+                    <td>12 zł</td>
+                
+                
+                 </tr>
+                 <tr>
+                    <td>8</td>
+                    <td>Wymiana wahacza</td>
+                    <td>60 zł</td>
+                
+                
+                 </tr>
+
+                 <tr>
+                    <td>9</td>
+                    <td>Wymiana paska klinowego</td>
+                    <td>30 zł</td>
+                
+                
+                 </tr>
+
+                 <tr>
+                    <td>10</td>
+                    <td>Wymiana sprzęgła</td>
+                    <td>250 zł</td>
+                
+                
+                 </tr>
+                 <tr>
+                    <td>11</td>
+                    <td>Wymiana pompy paliwa</td>
+                    <td>55 zł</td>
+                
+                
+                 </tr>
+                 <tr>
+                    <td>12</td>
+                    <td>Wymiana tłumika końcowego</td>
+                    <td>35 zł</td>
+                
+                
+                 </tr>
+                 <tr>
+                    <td>13</td>
+                    <td>Wymiana filtra powietrza</td>
+                    <td>20 zł</td>
+                
+                
+                 </tr>
+                 
+    </table>
+
+
+</div>
+
+
+    <footer>
+        <p>
+            Kaczka Radosław &copy; 2021/2022 Projekt Technologie internetowe
+        </p>
+
+    </footer>
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navUL = document.getElementById("nav-ul");
+        hamburger.addEventListener("click", () => {
+            navUL.classList.toggle("show");
+        });
+    </script>
+</body>
+
+</html>
